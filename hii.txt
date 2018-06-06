@@ -1,0 +1,30 @@
+#!/data/data/com.termux/files/usr/bin/bash
+echo "@@@ welcome buddy @@@"
+echo "###lets have some fun###"
+echo "...please write your name..."
+read var
+echo
+echo
+echo "### welcome" "${var}" "###"
+echo
+echo
+echo "### please write an alphabate from your name ###"
+read var1
+echo
+echo
+echo "### write your favorate alphabate from 'A TO Z' ###"
+echo "### NOTE THAT YOUR FAVORATE ALPHABATE MUST HAVE TO BE DFFERENT FROM YOUR NAME. ###"
+read var3
+echo
+echo
+echo "### we collected all your input ###"
+echo
+echo "##########"
+echo
+echo "we replaced your name alphabate" "'${var1^}'" "to your favorate alphabate" "'${var3^}'"
+echo
+echo "##########"
+echo
+echo "${var//$var1/$var3}"
+echo
+echo "##########"
